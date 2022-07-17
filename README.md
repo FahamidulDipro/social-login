@@ -5,5 +5,5 @@
 - Main page (Home Page) has two buttons.
 - On clicking them, it should authenticate with Fb/ gmail and move to the next page.
 - React Bootstrap is used to design the UI
-- Users can see their username and Profile picture in the navbar.
+- Users can see their `User Name` and `Profile picture` in the navbar.
 - `About` route is protected, users need to login to access this route.
