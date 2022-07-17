@@ -43,15 +43,19 @@ const Navigation = () => {
                     style={{ height: "30px", borderRadius: "50%" }}
                     className="mx-3"
                   />
-                  {user?.displayName}
-                  <button className="btn btn-primary ms-2" onClick={logout}>
+                  <span className="text-success fw-bold">
+                    {user?.displayName}
+                  </span>
+                  <button
+                    className="btn btn-primary ms-2 fw-bold"
+                    onClick={logout}
+                  >
                     Logout
                   </button>
                 </span>
               </>
             ) : null}
           </Nav>
-          {console.log(user?.displayName)}
         </Navbar.Collapse>
       </Container>
     </Navbar>
