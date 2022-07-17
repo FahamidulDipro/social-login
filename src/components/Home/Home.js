@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import FacebookLogin from "../FacebookLogin/FacebookLogin";
 import GoogleLogin from "../SocialLogin/GoogleLogin";
 
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
 
           <div>
             {!user ? (
-              <GoogleLogin></GoogleLogin>
+              <><GoogleLogin></GoogleLogin><FacebookLogin></FacebookLogin></>
             ) : (
               <h2>You Are Already Logged In</h2>
             )}
